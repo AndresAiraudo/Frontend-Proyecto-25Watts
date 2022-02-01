@@ -1,3 +1,4 @@
+import React from "react";
 import logofooter from '../../img-pin/footer-logo.svg';
 function Section6() {
     return(

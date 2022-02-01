@@ -1,27 +1,28 @@
+import React from "react";
 import imagencontacto from "../../img-pin/contact-image.png"
-function Section5() {
+function Section5(props) {
     return(
     <div id="contact">
         <form  action="" method="POST" id="form">
               <div className="form">
                   <h2 className="contact-title">Get in touch <span>We are hiring!</span></h2>
                   <div className="campo">
-                      <input type="text" name="" id="" required/><span class="bar"></span>
-                      <label for="">Name</label>
+                      <input onChange={props.handleChangeGeneral} value={props.contactData.name} type="text" name="name" id="name" required/><span className="bar"></span>
+                      <label htmlFor="name">Name</label>
                   </div>
                 <div className="campo">
-                      <input type="email" name="" id="" required/><span class="bar"></span>
-                      <label for="">Email</label>
+                      <input onChange={props.handleChangeGeneral} value={props.contactData.email} type="email" name="email" id="email" required/><span className="bar"></span>
+                      <label htmlFor="email">Email</label>
                 </div>
                   <div className="campo">
-                      <input type="text" name="" id="" required/><span class="bar"></span>
-                      <label for="">Phone</label>
+                      <input onChange={props.handleChangeGeneral} value={props.contactData.phone} type="text" name="phone" id="phone" required/><span className="bar"></span>
+                      <label htmlFor="phone">Phone</label>
                   </div>
-                <div class="campo">
-                      <textarea name="" id="" cols="20" rows="4" required/><span class="bar"></span>
-                      <label for="">Message</label>
+                <div className="campo">
+                      <textarea onChange={props.handleChangeGeneral} value={props.contactData.message} name="message" id="message" cols="20" rows="4" required/><span className="bar"></span>
+                      <label htmlFor="message">Message</label>
                 </div>
-                  <button type="submit" className="btn-submt">Send</button>
+                  <button disabled={props.disable} onClick={props.handleSend} type="submit" className="btn-submt">Send</button>
               </div>
         </form>
           <div className="contact-img">

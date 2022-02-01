@@ -1,3 +1,4 @@
+import React from "react";
 function Section4() {
     return(
         <div id="services">
@@ -34,7 +35,7 @@ function Section4() {
                     </button>
                   </h2>
                   <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at praesentium officia excepturi. Quo cum laboriosam, sunt voluptatem quasi magnam dolor esse iusto doloribus delectus cumque veritatis, officiis quia. Cupiditate?
                     </div>
                   </div>
